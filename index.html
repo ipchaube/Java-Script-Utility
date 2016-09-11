@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Utility Test Page</title>
+    <script src="js/utility.js"></script>
+</head>
+<body>
+<!-- This div will use to print Utility Results
+     This is only for test purposes
+-->
+<div id="printRes">
+
+</div>
+
+<button onclick="multiLineWorker()">Multi-Line Alert Message</button>
+
+<script>
+    function multiLineWorker() {
+        //MultiLine alert check
+        var myarr = ['Indu Prakash', 'An Indian Programmer.', '', 'Thank you!'];
+        //From Utility Method
+        multiLineAlert(myarr);
+    }
+</script>
+</body>
+</html>
