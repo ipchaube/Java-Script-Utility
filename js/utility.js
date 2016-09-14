@@ -22,3 +22,20 @@ function getCurrentTime() {
     var s = addZero(d.getSeconds());
     return h + ":" + m + ":" + s;
 }
+
+/*
+    Backslashes  for the ID in case HTML eelement id has special char
+    Return full id along with # to pass to the jQuery Selecter like $(jquerySelectorID(<ID>))
+ */
+function jquerySelectorID( id ) {
+    return (!id) ? null : '#' + myid.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
+
+}
+
+/*
+    Backslashes  for the ID in case HTML eelement id has special char
+    Return only id along, user need to add # along with the jQuery Selecter like $('#'+jquerySelectorID(<ID>))
+*/
+function jQueryID( id ) {
+    return (!id) ? null : myid.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
+}
