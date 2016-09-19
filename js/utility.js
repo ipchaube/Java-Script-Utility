@@ -51,6 +51,5 @@ function validateIPaddress(ipaddress)
     {
         return (true)
     }
-    alert("You have entered an invalid IP address!")
     return (false)
 }

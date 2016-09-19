@@ -30,9 +30,13 @@
 
 <script>
     //jquery Selector by ID
-    var str=validateIPaddress("1.sad.sd.sd");
-    alert(str);
-    $("#printIPvs").html(str);
+    var _flag=validateIPaddress("1.2.3.4");
+    if(_flag){
+        $("#printIPvs").html("Valid IP address");
+    }else{
+        $("#printIPvs").html("In-valid IP address");
+    }
+
 </script>
 
 
