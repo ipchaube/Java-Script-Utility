@@ -39,3 +39,18 @@ function jquerySelectorID( id ) {
 function jQueryID( id ) {
     return (!id) ? null : myid.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
 }
+
+
+/*
+  IP address Vailidators
+ */
+function validateIPaddress(ipaddress)
+{
+    var regs=/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    if (regs.test(ipaddress))
+    {
+        return (true)
+    }
+    alert("You have entered an invalid IP address!")
+    return (false)
+}

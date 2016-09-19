@@ -13,6 +13,10 @@
 
 </div>
 
+<div id="printIPvs">
+
+</div>
+
 <button onclick="multiLineWorker()">Multi-Line Alert Message</button>
 
 <script>
@@ -26,8 +30,17 @@
 
 <script>
     //jquery Selector by ID
+    var str=validateIPaddress("1.sad.sd.sd");
+    alert(str);
+    $("#printIPvs").html(str);
+</script>
+
+
+<script>
+    //IP Address Vailidator
     var str="Hello World";
     $("#printRes").html(str);
 </script>
+
 </body>
 </html>
